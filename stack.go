@@ -35,7 +35,7 @@ func (s *Stack) Get(n int, reverse bool) []*Node {
 	r := NewStack()
 	count := 0
 	// der neueste Node steht am Ende des Stacks
-	if reverse == false {
+	if !reverse {
 		start := 0
 		if n <= s.count-1 {
 			start = s.count - n
